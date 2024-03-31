@@ -11,6 +11,17 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div class="overflow-hidden">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 md:px-8 pt-4">
+        <div class="hidden lg:block fixed z-20 inset-0 left-[max(0px,calc(50%-42rem))] right-auto w-[19rem] pb-10 pl-8 pr-6 overflow-y-auto">
+          <div class="pt-4">
+            <!-- sidebar will go here -->
+          </div>
+        </div>
+        <div class="lg:pl-[19.5rem]">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
